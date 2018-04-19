@@ -8,7 +8,6 @@ pipeline {
         echo "Test User Password: ${TEST_USER_PSW}"
         echo "Hello ${MY_NAME}!"
         echo "Hello ${params.Name}!"
-        echo "Hello ${params.Name.Description}!"
       }
     }
   }
