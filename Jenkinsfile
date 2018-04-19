@@ -1,5 +1,8 @@
 pipeline {
-  agent any 
+  agent any
+  libraries {
+    lib('')
+  }
   stages {
     stage('Say Hello') {
       steps {
@@ -9,7 +12,7 @@ pipeline {
         echo "Hello ${MY_NAME}!"
         echo "Hello ${params.Name}!"
       }
-    } 
+    }
     stage('Testing') {
       failFast true
       parallel {
